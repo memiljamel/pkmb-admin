@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PKMB - Dashboard</title>
+    <title>PKBM - Edit</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <img src="img/logo/logo.svg" alt="">
                 </div>
-                <div class="sidebar-brand-text mx-3">PKMB</div>
+                <div class="sidebar-brand-text mx-3">PKBM</div>
             </a>
 
             <!-- Divider -->
@@ -110,13 +110,16 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="profil.html">
+                                <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profil
                                 </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Pengaturan
+                                </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="login.html" data-toggle="modal"
-                                    data-target="#logoutModal">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Keluar
                                 </a>
@@ -145,18 +148,36 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <form>
+                                    <form class="needs-validation" novalidate>
                                         <div class="form-group">
                                             <label for="judul">Judul</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" required>
+                                            <div class="invalid-feedback">
+                                                Silakan isi judul
+                                            </div>
+                                            <div class="valid-feedback">
+                                                Ok!
+                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="isi">Isi</label>
-                                            <textarea class="form-control" rows="4"></textarea>
+                                            <label for="isi">Isi pengumuman</label>
+                                            <textarea class="form-control" rows="4" required></textarea>
+                                            <div class="invalid-feedback">
+                                                Silakan isi pengumuman
+                                            </div>
+                                            <div class="valid-feedback">
+                                                Ok!
+                                            </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="tanggal">Tanggal</label>
-                                            <input type="date" class="form-control">
+                                            <input type="date" class="form-control" required>
+                                            <div class="invalid-feedback">
+                                                Silakan isi tanggal
+                                            </div>
+                                            <div class="valid-feedback">
+                                                Ok!
+                                            </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </form>
@@ -217,6 +238,7 @@
 
             <!-- Custom scripts for all pages-->
             <script src="js/sb-admin-2.min.js"></script>
+            <script src="js/main.js"></script>
             <!-- Page level plugins -->
             <script src="vendor/datatables/jquery.dataTables.min.js"></script>
             <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PKMB - Dashboard</title>
+    <title>PKBM - Edit</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <img src="img/logo/logo.svg" alt="">
                 </div>
-                <div class="sidebar-brand-text mx-3">PKMB</div>
+                <div class="sidebar-brand-text mx-3">PKBM</div>
             </a>
 
             <!-- Divider -->
@@ -145,20 +145,49 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <form>
+                                    <form class="needs-validation" novalidate>
                                         <div class="form-group">
                                             <label for="judul">Judul</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" required>
+                                            <div class="invalid-feedback">
+                                                Silakan isi judul
+                                            </div>
+                                            <div class="valid-feedback">
+                                                Ok!
+                                            </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="edior">Isi</label>
-                                            <textarea name="content" id="editor">
-                                            &lt;p&gt;This is some sample content.&lt;/p&gt;
+                                            <textarea name="content" id="editor" required>
+
                                         </textarea>
+                                            <div class="invalid-feedback">
+                                                Silakan isi kontent
+                                            </div>
+                                            <div class="valid-feedback">
+                                                Ok!
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Thumbnail</label>
+                                            <input type="file" class="form-control" id="inputGroupFile04"
+                                                aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+                                            <div class="invalid-feedback">
+                                                Silakan upload thumbnail
+                                            </div>
+                                            <div class="valid-feedback">
+                                                Ok!
+                                            </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="tanggal">Tanggal</label>
-                                            <input type="date" class="form-control">
+                                            <input type="date" class="form-control" required>
+                                            <div class="invalid-feedback">
+                                                Silakan isi tanggal
+                                            </div>
+                                            <div class="valid-feedback">
+                                                Ok!
+                                            </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </form>
